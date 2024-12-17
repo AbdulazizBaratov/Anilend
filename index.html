@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./photo_2024-12-17_00-47-26.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Anilend</h1>
+                    <span class="tagline">Your Anime Companion</span>
+                </div>
+                <div class="nav-links">
+                    <button onclick="switchTab('search')" class="active">Search</button>
+                    <button onclick="switchTab('trending')">Trending</button>
+                    <button onclick="switchTab('bot')">Bot</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="search" class="tab-content active">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for anime...">
+                    <button onclick="searchAnime()">Search</button>
+                </div>
+                <div id="searchResults" class="results-grid"></div>
+            </section>
+
+            <section id="trending" class="tab-content">
+                <h2>Trending Anime</h2>
+                <div id="trendingResults" class="results-grid"></div>
+            </section>
+
+            <section id="bot" class="tab-content">
+                <div class="bot-info">
+                    <h2>Telegram Bot</h2>
+                    <p>Use our Telegram bot for quick anime searches and updates!</p>
+                    <div class="bot-features">
+                        <div class="feature">
+                            <h3>🔍 Search Anime</h3>
+                            <p>Use /anime command to search for any anime</p>
+                        </div>
+                        <div class="feature">
+                            <h3>📺 Watchlist</h3>
+                            <p>Manage your anime watchlist with /watchlist</p>
+                        </div>
+                        <div class="feature">
+                            <h3>🌟 Recommendations</h3>
+                            <p>Get personalized recommendations with /recommend</p>
+                        </div>
+                    </div>
+                    <a href="https://t.me/Anilend_telegram_bot" class="bot-link" target="_blank">HERE</a>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
